@@ -6,10 +6,7 @@ RUN addgroup -S nonroot \
 USER nonroot
 
 WORKDIR /app
-COPY shape /app/shape
-COPY main.go /app/main.go 
-COPY go.mod /app/go.mod
-
+COPY . .
 RUN go build -o main main.go
 RUN chown user: main
 CMD ["./main"]
