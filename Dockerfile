@@ -1,11 +1,12 @@
 FROM golang:1.22
 
-RUN addgroup users
-RUN adduser user
-RUN usermod -aG users user
+RUN addgroup -S nonroot \
+    && adduser -S nonroot -G nonroot
+
+USER nonroot
 
 WORKDIR /app
-COPY . .
+COPY . /app
 RUN go build -o main main.go
 RUN chown user: main
 CMD ["./main"]
