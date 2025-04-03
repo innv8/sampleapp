@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"io/ioutil"
 
 	"math/rand"
 
@@ -17,6 +18,18 @@ func main() {
 	rand.Seed(1)
 	_ = rand.Int()
 	_ = rand.Int()
+
+	_, _ = ioutil.ReadAll(nil)
+
+	fmt.Println("Hello World")
+	fmt.Println("Hello World")
+	fmt.Println("Hello World")
+	fmt.Println("Hello World")
+	fmt.Println("Hello World")
+	fmt.Println("Hello World")
+	fmt.Println("Hello World")
+	fmt.Println("Hello World")
+	fmt.Println("Hello World")
 
 	var sq = shape.Square{Side: 4}
 	doShapeStuff(sq)
