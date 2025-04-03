@@ -21,17 +21,17 @@ func main() {
 
 	_, _ = ioutil.ReadAll(nil)
 
-	const greeting = "Hello World"
+	//const greeting = "Hello World"
 
-	fmt.Println(greeting)
-	fmt.Println(greeting)
-	fmt.Println(greeting)
-	fmt.Println(greeting)
-	fmt.Println(greeting)
-	fmt.Println(greeting)
-	fmt.Println(greeting)
-	fmt.Println(greeting)
-	fmt.Println(greeting)
+	fmt.Println("Hello World")
+	fmt.Println("Hello World")
+	fmt.Println("Hello World")
+	fmt.Println("Hello World")
+	fmt.Println("Hello World")
+	fmt.Println("Hello World")
+	fmt.Println("Hello World")
+	fmt.Println("Hello World")
+	fmt.Println("Hello World")
 
 	var sq = shape.Square{Side: 4}
 	doShapeStuff(sq)
